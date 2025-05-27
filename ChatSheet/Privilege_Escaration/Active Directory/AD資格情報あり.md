@@ -147,3 +147,5 @@ PS C:\Tools> Get-NetGroup "Sales Department" | select member
 ```
 
 ![file://C:/Users/alien/AppData/Local/Temp/.B6HJ62/3.png](file://C:/Users/alien/AppData/Local/Temp/.B6HJ62/3.png)
+
+abctestbc

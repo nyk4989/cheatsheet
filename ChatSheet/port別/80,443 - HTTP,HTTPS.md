@@ -147,4 +147,7 @@ Erlang Yaws Web Server: .yaws
 - /cms
 
 ### ### ツールでCMSを特定する方法
-- [CMSeek](https://github.com/Tuhinshubhra/CMSeek)
+- [CMSeek](https://github.com/Tuhinshubhra/CMSeek) <- このツールは有名どころはいいがすべてのCMSをカバーしているわけではないことに注意。
+```sh
+cmseek -u http://10.10.10.180/ -v
+```

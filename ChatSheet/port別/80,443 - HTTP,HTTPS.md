@@ -126,8 +126,6 @@ Erlang Yaws Web Server: .yaws
 
 ---
 # # 脆弱性別
-
----
 ## ## SQL Injection
 [SQL Injection](obsidian**://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FSQL%20Injection)
 
@@ -139,3 +137,5 @@ Erlang Yaws Web Server: .yaws
 
 ## ## SSTI
 [SSTI](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FSSTI(Server%20Side%20Templet%20Injection))
+
+---

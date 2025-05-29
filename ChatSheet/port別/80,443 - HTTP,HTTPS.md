@@ -139,3 +139,12 @@ Erlang Yaws Web Server: .yaws
 [SSTI](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FSSTI(Server%20Side%20Templet%20Injection))
 
 ---
+# # 違和感
+## ## CMSの特徴
+以下のようなディレクトリがあった場合はCMSの可能性も考慮してもいいかも。
+- /wp-content
+- /blog
+- /cms
+
+### ### ツールでCMSを特定する方法
+- [CMSeek](https://github.com/Tuhinshubhra/CMSeek)

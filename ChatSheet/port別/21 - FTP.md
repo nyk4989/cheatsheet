@@ -40,3 +40,18 @@ wget -m [ftp://anonymous:anonymous@10.10.10.98](ftp://anonymous:anonymous@10.10.
 
 wget -m --no-passive [ftp://anonymous:anonymous@10.10.10.98](ftp://anonymous:anonymous@10.10.10.98) #Download all
 ```
+
+---
+## ## ASCIIモードとBinaryモード
+1. ASCIIモード
+	- テキストファイル用
+	- 改行コードをOSごとに自動変換してくれる。
+2. Binaryモード
+	- 実行ファイルや画像、圧縮ファイルなどのバイナリ用
+	- ファイルを一切変更せずに転送。<- これが推奨モードとされている。
+### ### 切り替え方法
+```
+ftp target_ip
+ftp> binary     ← バイナリモードに切り替える
+ftp> get file.exe
+```

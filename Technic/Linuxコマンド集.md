@@ -51,3 +51,8 @@ find /mnt/remote -type f -name '*.config' -exec grep -iH 'password' {} +
     - `grep` コマンド部分
 		- `-i` ← **大文字小文字を無視**して「password」を検索（例：`PASSWORD`, `PassWord` もOK）
 	    - `-H` ← ヒットした行の前に**ファイル名を表示**
+---
+### ### バイナリファイルを読む方法
+```sh
+strings hoge.sdf | less
+```

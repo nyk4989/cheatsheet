@@ -5,7 +5,6 @@
 # # 基本列挙
 ## ## Directory Bruteforce
 - 注意点：CMS系のマシンの場合、拡張子を指定したものでないと見つけられないディレクトリがあったりするのでちゃんと列挙すること。
-
 ### ### Tools
 - Gobuster
 ```sh
@@ -76,20 +75,39 @@ ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value -fs
 SecLists/Discovery/Web-Content/burp-parameter-names.txt
 ```
 
-
 ## ## vhost
 注意：二宮個人的にはGobusterだと正しく列挙できないことが多いが、念のため2つ回している。
 - FFUF
 ```sh
 gobuster vhosts -u hostname -w wordlists -t 150
 ```
+
 - Gobuster
 ```sh
 ffuf -w /path/to/vhost/wordlist -u https://target -H "Host: FUZZ" -fs 4242
 ```
 
+### ## herfリンクなどのクロール
+### ### hakrawler
+爆速＆軽量。`<a>, <script>`など静的リンク探索に最適。JSレンダなしでもOK。初動でサクッと使える。
+```sh
+hakrawler -url http://target.htb -depth 2 -plain
+```
+
+### ### LinkFinder
+JavaScript内にある隠しAPIやパスを抽出できる。ログイン周り・API呼び出しを狙うときに強い。
+```
+python3 linkfinder.py -i http://target.htb/assets/app.js -o cli
+```
+
+### ### katana
+本気で深堀りしたいとき用。遅めだが、API探索や再帰クローリングが必要な場合に最強。
+```
+katana -u http://target.htb -d 2 -o out.txt
+```
+
 ---
-#
+# # 機能別
 ## ## File Upload
 ### ### 拡張子を変える。
 ```
@@ -122,27 +140,6 @@ Erlang Yaws Web Server: .yaws
 ▼参考サイト
 [https://book.hacktricks.xyz/pentesting-web/file-upload](https://book.hacktricks.xyz/pentesting-web/file-upload)
 
----
-### ## herfリンクなどのクロール
-### ### hakrawler
-爆速＆軽量。`<a>, <script>`など静的リンク探索に最適。JSレンダなしでもOK。初動でサクッと使える。
-```sh
-hakrawler -url http://target.htb -depth 2 -plain
-```
-
-### ### LinkFinder
-JavaScript内にある隠しAPIやパスを抽出できる。ログイン周り・API呼び出しを狙うときに強い。
-```
-python3 linkfinder.py -i http://target.htb/assets/app.js -o cli
-```
-
-### ### katana
-本気で深堀りしたいとき用。遅めだが、API探索や再帰クローリングが必要な場合に最強。
-```
-katana -u http://target.htb -d 2 -o out.txt
-```
-
----
 ## ## .gitがあった場合
 - gitのディレクトリを自分の端末にダウンロードする。
 ### ### wget

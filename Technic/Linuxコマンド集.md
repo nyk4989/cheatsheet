@@ -11,7 +11,7 @@
 | `tree -s`       | **サイズ順に並べる**（-Dと併用すると日時も表示可能）            |
 | `tree -C`       | **色付き出力**（デフォで有効な場合も）                    |
 | `tree -Q`       | **ファイル名をダブルクォートで囲む**（スペース入りファイル名がわかりやすい） |
-|                 |                                          |
+
 ### ### 情報収集向き
 ```sh 
 tree -a -f -pug -h -L 3
@@ -43,3 +43,11 @@ zip -r FILENAME.zip FILE_DIR
 find /mnt/remote -type f -name '*.config' -exec grep -iH 'password' {} +
 ```
 - オプションの説明：
+	-  `find` コマンド部分
+		- `/mnt/remote` ← 対象ディレクトリ
+		- `-type f` ← 通常ファイルのみ検索（ディレクトリは無視）
+		- `-name '*.config'` ← `.config` で終わるファイル名のみ対象
+		- `-exec ... {} +` ← 見つけたファイルを `grep` に**まとめて渡す**
+    - `grep` コマンド部分
+		- `-i` ← **大文字小文字を無視**して「password」を検索（例：`PASSWORD`, `PassWord` もOK）
+	    - `-H` ← ヒットした行の前に**ファイル名を表示**

@@ -42,36 +42,7 @@ zip -r FILENAME.zip FILE_DIR
 -max-rate 50 --min-rate 10 --max-retries 2 --scan-delay 500ms
 
 ## Web
-### herfリンクなどのクロール
-- hakrawler
-爆速＆軽量。<a>, <script>など静的リンク探索に最適。JSレンダなしでもOK。初動でサクッと使える。
-hakrawler -url http://target.htb -depth 2 -plain
 
-- LinkFinder
-JavaScript内にある隠しAPIやパスを抽出できる。ログイン周り・API呼び出しを狙うときに強い。
-python3 linkfinder.py -i http://target.htb/assets/app.js -o cli
-
-- katana
-本気で深堀りしたいとき用。遅めだが、API探索や再帰クローリングが必要な場合に最強。
-katana -u http://target.htb -d 2 -o out.txt
-
-## .gitがあった場合
----
-gitのディレクトリを自分の端末にダウンロードする。
-
-### wget
-```
-wget --mirror -I .git http://target/.git
-​
-オプションの説明:
- -mirror : gitからすべてをダウンロードするように指示
- -I : ダウンロードされたすべてのファイルを作成する
-​```
-
-### git-dumper ※ 共有ディレクトリで実施するとエラーになる。
-```
-git-dumper http://10.10.11.58/.git/ ./dog_git_repo
-```
 ---
 
 ### vhosts

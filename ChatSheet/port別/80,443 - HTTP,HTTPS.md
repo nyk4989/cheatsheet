@@ -57,9 +57,6 @@ dirbuster -u https://10.10.10.60 -t 20 -l /usr/share/wordlists/dirbuster/directo
 使用している製品に含まれる拡張子。(confm,cgi)
 開発言語の拡張子(php,pl...)
 
-
----
-
 ## ## リクエストパラメータの列挙
 http://192.168.56.134/manage.phpに対して、http://192.168.56.134/manage.php?の後ろにパラメータを順々にここなっていく。
 
@@ -92,6 +89,7 @@ ffuf -w /path/to/vhost/wordlist -u https://target -H "Host: FUZZ" -fs 4242
 ```
 
 ---
+#
 ## ## File Upload
 ### ### 拡張子を変える。
 ```
@@ -123,6 +121,43 @@ Erlang Yaws Web Server: .yaws
 
 ▼参考サイト
 [https://book.hacktricks.xyz/pentesting-web/file-upload](https://book.hacktricks.xyz/pentesting-web/file-upload)
+
+---
+### ## herfリンクなどのクロール
+### ### hakrawler
+爆速＆軽量。`<a>, <script>`など静的リンク探索に最適。JSレンダなしでもOK。初動でサクッと使える。
+```sh
+hakrawler -url http://target.htb -depth 2 -plain
+```
+
+### ### LinkFinder
+JavaScript内にある隠しAPIやパスを抽出できる。ログイン周り・API呼び出しを狙うときに強い。
+```
+python3 linkfinder.py -i http://target.htb/assets/app.js -o cli
+```
+
+### ### katana
+本気で深堀りしたいとき用。遅めだが、API探索や再帰クローリングが必要な場合に最強。
+```
+katana -u http://target.htb -d 2 -o out.txt
+```
+
+---
+## ## .gitがあった場合
+- gitのディレクトリを自分の端末にダウンロードする。
+### ### wget
+```sh
+wget --mirror -I .git http://target/.git
+​
+オプションの説明:
+ -mirror : gitからすべてをダウンロードするように指示
+ -I : ダウンロードされたすべてのファイルを作成する
+```
+
+### ### GitDumper
+```sh
+git-dumper http://10.10.11.58/.git/ ./dog_git_repo
+```
 
 ---
 # # 脆弱性別

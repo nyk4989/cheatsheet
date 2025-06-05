@@ -41,7 +41,6 @@ zip -r FILENAME.zip FILE_DIR
 - サーバに負荷をかけないコマンド
 -max-rate 50 --min-rate 10 --max-retries 2 --scan-delay 500ms
 
-## Web
 
 ---
 
@@ -50,18 +49,7 @@ zip -r FILENAME.zip FILE_DIR
 ```
 ffuf -w /opt/work/WordLists/SecLists-master/Discovery/DNS/subdomains-top1million-110000.txt -u http://spectra.htb/ -H "Host: FUZZ.spectra.htb" -ic -fw 22
 ```
-### Wordpress,WP,WPSCAN
-#### WPScan
-apitoken:9q9BSbdaRwKT1mQZ6t1YmSU6RZW44oxgicqa42TvtBU
 
-- basic usage
-wpscan --url "target" --verbose --api-token xxxxxxxxxxxxxxxxxxxxxxxx
-​
-- enumerate vulnerable plugins, users, vulrenable themes, timthumbs
-wpscan --url "target" --enumerate vp,u,vt,tt --verbose --api-token xxxxxxxxxxxxxxxxxxxxxxxx
-
-- WPでプラグインをアップロードしたあと以下のディレクトリでアクセスができる。
-[WP root]/wp-content/plugins/[plugin name]/[filename]
 
 # MySQL コマンド
 mysql -u root -h 127.0.0.1 -e 'show databases;'

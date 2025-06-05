@@ -1,9 +1,4 @@
 ## ## WordPress Enumaration
-- api token
-```
---api-token 9q9BSbdaRwKT1mQZ6t1YmSU6RZW44oxgicqa42TvtBU
-```
-
 - Users
 ```sh
 curl -s -I -X GET http://blog.example.com/?author=1

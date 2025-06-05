@@ -184,13 +184,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f2b7576b8a8c4110",
+  "active": "1811f044dc95b84a",
   "lastOpenFiles": [
+    "Technic/Linuxコマンド集.md",
+    "Technic/Linuxコマンド週.md",
+    "Technic/無題のファイル.md",
+    "無題のフォルダ",
     "静的分析/手動分析.md",
     "ChatSheet/Privilege_Escaration/Active Directory/手動分析.md",
     "ChatSheet/Privilege_Escaration/Active Directory/無題のファイル.md",
     "静的分析",
-    "無題のフォルダ",
     "ChatSheet/Privilege_Escaration/Active Directory/AMISバイパス.md",
     "Technic/ブラウザーお気に入り/デフォルトパスワード.md",
     "ChatSheet/port別/デフォルトパスワード.md",
@@ -214,9 +217,6 @@
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/21..md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/22..md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/2. OUの列挙.md",
-    "ChatSheet/Privilege_Escaration/Active Directory/CRTP/20..md",
-    "ChatSheet/Privilege_Escaration/Active Directory/CRTP/19..md",
-    "ChatSheet/Privilege_Escaration/Active Directory/CRTP/16. 制約付き委任.md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP",
     "Technic/Creat_Reverseshell",
     "Technic/CreatRe",

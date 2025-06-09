@@ -213,3 +213,11 @@ git checkout <commit-hash>
 ```sh
 cmseek -u http://10.10.10.180/ -v
 ```
+
+---
+# # 403 Status
+ヘッダーなどの偽装を行いBypassできないかを試みる。
+- [bypass-403](https://github.com/iamj0ker/bypass-403)
+```sh
+bypass-403 http://10.10.11.113:4566/
+```

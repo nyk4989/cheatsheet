@@ -140,9 +140,10 @@ Erlang Yaws Web Server: .yaws
 ▼参考サイト
 [https://book.hacktricks.xyz/pentesting-web/file-upload](https://book.hacktricks.xyz/pentesting-web/file-upload)
 
+---
 ## ## .gitがあった場合
-- gitのディレクトリを自分の端末にダウンロードする。
-### ### wget
+### ### gitのディレクトリを自分の端末にダウンロードする。
+- **wget**
 ```sh
 wget --mirror -I .git http://target/.git
 ​
@@ -151,11 +152,37 @@ wget --mirror -I .git http://target/.git
  -I : ダウンロードされたすべてのファイルを作成する
 ```
 
-### ### GitDumper
+- **GitDumper**
 ```sh
 git-dumper http://10.10.11.58/.git/ ./dog_git_repo
 ```
 
+### ### Gitコマンド
+- コミット履歴の確認。どんな変更が過去にあったかを調べる。
+```sh
+git log
+```
+
+- ほかにどんなブランチが存在するか。(ブランチはそれぞれのバージョンみたいなもので、例えば本番用。開発用みたいな感じ)
+```sh
+git show-branch
+```
+
+- ブランチの切り替え
+```sh
+git switch <ブランチ名>
+git checkout dev
+```
+
+- 複数のブランチがある場合、それの差分を見る方法
+```sh
+git diff <commit1> <commit2>
+```
+
+- 特定の過去のコミット状態に一時的に切り替えてファイルの中身を確認するために使用
+```sh
+git checkout 
+```
 ---
 # # 脆弱性別
 ## ## SQL Injection

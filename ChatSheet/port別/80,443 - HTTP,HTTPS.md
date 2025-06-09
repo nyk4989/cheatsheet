@@ -181,7 +181,7 @@ git diff <commit1> <commit2>
 
 - 特定の過去のコミット状態に一時的に切り替えてファイルの中身を確認するために使用
 ```sh
-git checkout 
+git checkout <commit-hash>
 ```
 ---
 # # 脆弱性別

@@ -56,6 +56,7 @@ dirbuster -u https://10.10.10.60 -t 20 -l /usr/share/wordlists/dirbuster/directo
 使用している製品に含まれる拡張子。(confm,cgi)
 開発言語の拡張子(php,pl...)
 
+---
 ## ## リクエストパラメータの列挙
 http://192.168.56.134/manage.phpに対して、http://192.168.56.134/manage.php?の後ろにパラメータを順々にここなっていく。
 
@@ -74,7 +75,7 @@ ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value -fs
 ```sh
 SecLists/Discovery/Web-Content/burp-parameter-names.txt
 ```
-
+---
 ## ## vhost
 注意：二宮個人的にはGobusterだと正しく列挙できないことが多いが、念のため2つ回している。
 - FFUF

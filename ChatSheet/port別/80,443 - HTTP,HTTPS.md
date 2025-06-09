@@ -142,6 +142,7 @@ Erlang Yaws Web Server: .yaws
 
 ---
 ## ## .gitがあった場合
+開発中に含まれた機密情報などを探してく。
 ### ### gitのディレクトリを自分の端末にダウンロードする。
 - **wget**
 ```sh
@@ -171,7 +172,7 @@ git show-branch
 - ブランチの切り替え
 ```sh
 git switch <ブランチ名>
-git checkout dev
+git checkout <ブランチ名>
 ```
 
 - 複数のブランチがある場合、それの差分を見る方法

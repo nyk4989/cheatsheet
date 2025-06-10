@@ -15,7 +15,10 @@ gobuster -u https://10.10.10.60/ -w /usr/share/wordlists/dirbuster/directory-lis
 gobuster dir -k -u http://exfiltrated.offsec/ -w /opt/work/WordLists/directory-list-2.3-medium.txt -r -o gobuster.txt
 
 # ヘッダーを指定するやり方
-gobuster dir -H "Authorization: Basic b2Zmc2VjOmVsaXRl" -u [http://192.168.154.46:242/](http://192.168.154.46:242/) -w /opt/work/WordLists/directory-list-2.3-medium.txt -o gobuster.log
+gobuster dir -H "Authorization: Basic b2Zmc2VjOmVsaXRl" -u http://192.168.154.46:242/ -w /opt/work/WordLists/directory-list-2.3-medium.txt -o gobuster.log
+
+# 特定のステータスコードをブロックする
+gobuster dir -u http://hoge.com/ -w /wordlist
 ```
 
 - Ferxbuster

@@ -18,7 +18,9 @@ gobuster dir -k -u http://exfiltrated.offsec/ -w /opt/work/WordLists/directory-l
 gobuster dir -H "Authorization: Basic b2Zmc2VjOmVsaXRl" -u http://192.168.154.46:242/ -w /opt/work/WordLists/directory-list-2.3-medium.txt -o gobuster.log
 
 # 特定のステータスコードをブロックする
-gobuster dir -u http://hoge.com/ -w /wordlist
+gobuster dir -u http://hoge.com/ -w /wordlists/hoge.txt -b
+	#  -b, --status-codes-blacklist string     Negative status codes (will override status-codes if set). Can also handle ranges like 200,300-400,404. (default "404")
+
 ```
 
 - Ferxbuster

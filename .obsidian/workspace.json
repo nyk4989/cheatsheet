@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technic/Linuxコマンド集.md",
+                "file": "ChatSheet/port別/80,443 - HTTP,HTTPS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linuxコマンド集"
+              "title": "80,443 - HTTP,HTTPS"
+            }
+          },
+          {
+            "id": "d087013b83a2de1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Setup/katanaインストール手順.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "katanaインストール手順"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "92860b329e9422a7",
@@ -184,8 +199,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f2b7576b8a8c4110",
+  "active": "d087013b83a2de1c",
   "lastOpenFiles": [
+    "ChatSheet/port別/80,443 - HTTP,HTTPS.md",
+    "Setup/katanaインストール手順.md",
+    "Setup",
+    "Technic/Linuxコマンド集.md",
     "Technic/脆弱性探し.md",
     "Technic/無題のファイル.md",
     "Technic/C2.md",
@@ -193,12 +212,9 @@
     "ChatSheet/Privilege_Escaration/Windows/Tools.md",
     "Technic/Creat_Reverseshell/Revarse Shell.md",
     "Technic/Password Bruteforce.md",
-    "ChatSheet/port別/無題のファイル.md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/1. ユーザ、コンピュータ、グループの列挙.md",
     "Technic/SQLコマンド.md",
-    "Technic/Linuxコマンド集.md",
     "Technic/Linuxコマンド週.md",
-    "無題のフォルダ",
     "静的分析/手動分析.md",
     "ChatSheet/Privilege_Escaration/Active Directory/手動分析.md",
     "ChatSheet/Privilege_Escaration/Active Directory/無題のファイル.md",
@@ -215,7 +231,6 @@
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/8. ゴールデンチケット周り.md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/Windows周りCheatSheet.md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/4. Forestの列挙(再度深掘りが必要).md",
-    "ChatSheet/Privilege_Escaration/Active Directory/CRTP/9. シルバーチケット.md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/5.権限昇格と並行移動imge",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP",
     "Technic/Creat_Reverseshell",

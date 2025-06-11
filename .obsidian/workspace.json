@@ -198,8 +198,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d087013b83a2de1c",
+  "active": "1811f044dc95b84a",
   "lastOpenFiles": [
+    "Technic/FFUFコマンド.md",
     "ChatSheet/port別/80,443 - HTTP,HTTPS.md",
     "Setup/katanaインストール手順.md",
     "Setup",
@@ -229,7 +230,6 @@
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/OverPass-The-Hash.md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/8. ゴールデンチケット周り.md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/Windows周りCheatSheet.md",
-    "ChatSheet/Privilege_Escaration/Active Directory/CRTP/4. Forestの列挙(再度深掘りが必要).md",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/5.権限昇格と並行移動imge",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP",
     "Technic/Creat_Reverseshell",

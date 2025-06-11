@@ -22,3 +22,7 @@ email=FUZZ
 ```
 
 ## ## Proxyを指定する方法
+- `-x`をつければいい
+```sh
+ffuf -request ./req.txt -w /opt/wordlists/ssti.fuzz -v -x http://127.0.0.1:8080
+```

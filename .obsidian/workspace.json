@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Setup/katanaインストール手順.md",
+                "file": "ChatSheet/脆弱性別/SSTI(Server Side Templet Injection).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "katanaインストール手順"
+              "title": "SSTI(Server Side Templet Injection)"
             }
           }
         ],
@@ -198,8 +198,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1811f044dc95b84a",
+  "active": "d087013b83a2de1c",
   "lastOpenFiles": [
+    "Setup/katanaインストール手順.md",
     "Technic/コマンド集.md",
     "Technic/コマンド集/SQLコマンド.md",
     "Technic/コマンド集/FFUFコマンド.md",
@@ -209,7 +210,6 @@
     "無題のフォルダ",
     "Technic/FFUFコマンド.md",
     "ChatSheet/port別/80,443 - HTTP,HTTPS.md",
-    "Setup/katanaインストール手順.md",
     "Setup",
     "Technic/Linuxコマンド集.md",
     "Technic/脆弱性探し.md",

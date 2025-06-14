@@ -1,7 +1,7 @@
 ## ## Reverse shellが完了した後
 ptyを使用したshell
 ```
-- 方法1
+方法1
 # python -c "import pty;pty.spawn('/bin/bash')"
 
 方法2

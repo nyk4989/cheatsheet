@@ -44,8 +44,33 @@ poen_port.append('443')
 
 ---
 ## ## リスト要素を削除する
-del文を使用する。
-使い方`del 要素の名前['インデックス番号']`
+### ### del文を使用する
+使い方`del 要素の名前[インデックス番号]`
 ```Python
+motocls=['honda','suzuki','kawasaki']
+print(motocls)
 
+del motocls[0] # 削除
+print(motocls)
 ```
+↓出力結果
+```sh
+['honda', 'suzuki', 'kawasaki']
+['suzuki', 'kawasaki']
+```
+
+### ### .pop()メソッドを使用する
+**一時的に削除したい場合に有効**
+
+###
+```Python
+motocls=['honda','suzuki','kawasaki']
+print(motocls)
+
+popped_motocls=motocls.pop() # 一時的に削除
+print(motocls)
+print(poppend_motocls)
+```
+
+---
+## ## 

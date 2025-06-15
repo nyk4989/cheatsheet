@@ -62,7 +62,7 @@ print(motocls)
 ### ### .pop()メソッドを使用する
 **一時的に削除したい場合に有効**
 
-###
+#### #### 最後の要素を削除する方法
 ```Python
 motocls=['honda','suzuki','kawasaki']
 print(motocls)
@@ -70,6 +70,14 @@ print(motocls)
 popped_motocls=motocls.pop() # 一時的に削除
 print(motocls)
 print(poppend_motocls)
+```
+
+#### #### リストの中の任意の位置から要素を削除する
+```Python
+motocls=['honda','kawasaki','KTM']
+
+first_pop=motocls.pop(0)
+ print(f" インデックス番号0である {first_pop.title()} が削除される。")
 ```
 
 ---

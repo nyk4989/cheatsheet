@@ -125,9 +125,19 @@ print(cars)
 ```
 
 ### ### リストを逆順に出力する
+永続的に変更することができる。
 ```Python
 cars=['Honda','BMW','Nissan','Suzuki']
 
 cars.reverse()
 print(cars)
+```
+
+### ### リストの長さを調べる
+len()関数を使用する。
+```Python
+cars=['Honda','BMW','Nissan','Suzuki']
+length=len(cars)
+
+print(length)
 ```

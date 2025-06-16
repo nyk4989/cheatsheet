@@ -81,15 +81,28 @@ first_pop=motocls.pop(0)
 ```
 
 ### ### 値を指定して要素を削除する
-remove()メソッドを使用する。
+remove()メソッドを使用する。※popの様に削除した値を使用することも可能。
 ```Python
 motocls=['honda','kawasaki','KTM']
 
 print(motocls)
 
-motocls.remove('KTM') 
+motocls.remove('KTM') # ここで削除される。
 print(motocls)
 ```
 
 ---
-## ## 
+## ## リストを整理する
+### ### sort()を使用して永続的にソートする
+- a-z順にソートする。
+```python
+cars=['Honda','BMW','Nissan','Suzuki']
+
+cars.sort()
+print(cars)
+```
+
+- z-a順にソートする。
+```Python
+cars=
+```

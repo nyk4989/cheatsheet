@@ -141,3 +141,18 @@ length=len(cars)
 
 print(length)
 ```
+
+---
+## ## 数値のリストの作成
+### ### range()関数を使用して数値のリストを作成する。
+```Python
+numbers=list(range(1,6))
+print(numbers)
+```
+
+- 特定の値をスキップさせる。
+	- 3つ目の引数を与えるとその値をスキップする数値として認識する。
+```Python
+even_numbers=list(range(2,11,2))
+print(even_numbers)
+```

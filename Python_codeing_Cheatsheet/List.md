@@ -104,5 +104,30 @@ print(cars)
 
 - z-a順にソートする。
 ```Python
-cars=
+cars=['Honda','BMW','Nissan','Susuzki']
+
+cars.sort(reverse=True)
+print(cars)
+```
+
+### ### sorted()リストを一時的にソートする。
+```Python
+cars=['Honda','BMW','Nissan','Suzuki']
+
+print('元のリスト')
+print(cars)
+
+print('\n ソートされたリスト')
+print(sorted(cars))
+
+print('\n 元のリスト')
+print(cars)
+```
+
+### ### リストを逆順に出力する
+```Python
+cars=['Honda','BMW','Nissan','Suzuki']
+
+cars.reverse()
+print(cars)
 ```

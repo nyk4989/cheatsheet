@@ -80,5 +80,16 @@ first_pop=motocls.pop(0)
  print(f" インデックス番号0である {first_pop.title()} が削除される。")
 ```
 
+### ### 値を指定して要素を削除する
+remove()メソッドを使用する。
+```Python
+motocls=['honda','kawasaki','KTM']
+
+print(motocls)
+
+motocls.remove('KTM') 
+print(motocls)
+```
+
 ---
 ## ## 

@@ -11,6 +11,7 @@ generate --http 10.10.16.3:4566 --os linux --skip-symbols
 
 # DNS
 ```
+- Becon
 ## ## Implantの設定を確認
 ```sh
 sliver > implants 

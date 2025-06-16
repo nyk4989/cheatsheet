@@ -24,11 +24,14 @@ sliver > implants
  STRUCTURAL_CIRRUS   session        sliver     windows/amd64   EXECUTABLE   [1] mtls://10.10.16.3:8888   false 
 
 ```
-## ## リスナーを起動
+## ## リスナーを起動&終了
 ```sh
 sliver > mtls --lport 8888
 [*] Starting mTLS listener ...
 [*] Successfully started job #2
+
+# リスナー終了
+jobs -k <ID>
 ```
 
 ## ## 今張っている通信の確認

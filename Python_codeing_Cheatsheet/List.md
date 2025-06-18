@@ -151,7 +151,7 @@ print(numbers)
 ```
 
 - 特定の値をスキップさせる。
-	- 3つ目の引数を指定すると
+	- 3つ目の引数を指定すると入れた数字ずつ増やされていく。
 ```Python
 even_numbers=list(range(2,11,2))
 print(even_numbers)

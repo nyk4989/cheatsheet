@@ -58,8 +58,11 @@ dirbuster -u https://10.10.10.60 -t 20 -l /usr/share/wordlists/dirbuster/directo
 ```
 
 #### #### 拡張子について
-使用している製品に含まれる拡張子。(confm,cgi)
-開発言語の拡張子(php,pl...)
+- 設定ファイル系の拡張子
+```
+-x conf,ini,txt,cfg,config,bak,old,backup
+```
+
 
 ---
 ## ## リクエストパラメータの列挙

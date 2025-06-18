@@ -156,3 +156,11 @@ print(numbers)
 even_numbers=list(range(2,11,2))
 print(even_numbers)
 ```
+
+## ## リストをスライスする
+指定するときはリストのインデックス番号を指定する必要がある。
+また、インデックスの0~3を指定した場合返されるのは0,1.2までとなることに注意が必要。
+```python
+players=['A','B','C','D','E']
+print(players[0:3])
+```

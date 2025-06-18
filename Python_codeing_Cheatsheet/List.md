@@ -151,7 +151,7 @@ print(numbers)
 ```
 
 - 特定の値をスキップさせる。
-	- 3つ目の引数を与えるとその値をスキップする数値として認識する。
+	- 3つ目の引数を指定すると
 ```Python
 even_numbers=list(range(2,11,2))
 print(even_numbers)

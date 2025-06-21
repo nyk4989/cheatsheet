@@ -11,6 +11,7 @@ def greet_user(): # defを使用することで、関数を定義することを
 greet_user() # 関数の呼び出し
 ```
 
+---
 ## ## 関数に追加の情報を渡す
 ```python
 def greet_user(username):
@@ -19,3 +20,31 @@ def greet_user(username):
 	
 greet_user('yuki') # こうすることにより、printに必要な情報が渡される。
 ```
+---
+## ## 位置引数
+- 位置引数とは
+	- 位置引数は変数名と実引数が紐づくようになっている。
+```python
+def describe_pet(animal_type,pet_name): # ここと
+	"""ペットの情報についての情報を出力する。"""
+	print(f"\n 私は{animal_type}を飼ってます。")
+	print(f"\n {animal_type}の名前は{pet_name}です。")
+
+describe_pet('ネコ','ミケ') # ここが一致している。
+# animel_typeにはネコが入り、pet_nameにはミケが入る。
+```
+
+### ### 複数回関数を呼び出すとき
+```python
+def describe_pet(animal_type,pet_name):
+	"""ペットの情報についての情報を出力する。"""
+	print(f"\n 私は{animal_type}を飼ってます。")
+	print(f"\n {animal_type}の名前は{pet_name}です。")
+
+describe_pet('ネコ','ミケ')
+describe_pet('イヌ','チョコ')
+```
+---
+## ## キーワード引数
+- キーワード引数とは
+	- 名前と値のペアを関数に渡す。

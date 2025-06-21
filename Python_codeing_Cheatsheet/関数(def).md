@@ -48,3 +48,20 @@ describe_pet('イヌ','チョコ')
 ## ## キーワード引数
 - キーワード引数とは
 	- 名前と値のペアを関数に渡す。
+```python
+def describe_pet(animal_type,pet_name):
+	"""ペットの情報についての情報を出力する。"""
+	print(f"\n 私は{animal_type}を飼ってます。")
+	print(f"\n {animal_type}の名前は{pet_name}です。")
+
+# 位置引数の場合
+# describe_pet('ネコ','ミケ')
+# describe_pet('イヌ','チョコ')
+
+# キーワード引数の場合
+describe_pet(animal_type='ネコ',pet_name='ミケランジェロ')
+```
+
+---
+## ## デフォルト値
+- 

@@ -10,3 +10,12 @@ def greet_user(): # defを使用することで、関数を定義することを
 	
 greet_user() # 関数の呼び出し
 ```
+
+## ## 関数に追加の情報を渡す
+```python
+def greet_user(username):
+	"""シンプルな挨拶メッセージを出力する"""
+	print(f"こんにちは!{username.title()}")
+	
+greet_user('yuki') # こうすることにより、printに必要な情報が渡される。
+```

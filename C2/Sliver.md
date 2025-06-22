@@ -4,6 +4,7 @@
 generate --mtls 10.10.16.3 --skip-symbols
 ## Linux
 generate --mtls 10.10.16.3 --os linux --skip-symbols
+generate --mtls 10.10.16.3:8888 --os linux
 # HTTP/HTTPS
 generate --http 10.10.16.3 --os linux --skip-symbols
 ## Port指定

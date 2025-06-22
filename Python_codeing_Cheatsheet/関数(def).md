@@ -75,3 +75,12 @@ http_port(port='8080') # <-これが優先される。
 - 空の値を持たせるとデフォルト値が消え空になってしまう。
 
 ## ## 戻り値を設定する(return)
+```python
+def get_formatted_name(first_name,last_name): # この関数は、借り引数としてfirst_nameとlast_nameを受け取る。
+	"""フォーマットされたフルネーム"""
+	full_name=f"{first_name} {last_name}" # 関数は、名と性の間にスペースを挟んで文字連結したものをfull_name変数に代入する。
+	return full_name.title() # full_nameの値をタイトルケースに変更して関数を呼び出した行に返す。
+	
+musician=get_formatted_name('alexi','lyho') # 関数を呼び出したときに値を返ってくるようにするには、戻り値を代入する変数を指定する必要がある。
+print(musician) # 指定した性と名を元にフォーマットされたフルネームが出力される。
+```

@@ -1,0 +1,2 @@
+## ## Typeジャグリング(php8未満)
+- [php-type-juggling-vulnerability]([https://medium.com/@abdelrahman0x01/php-type-juggling-vulnerability-768bca4d8b3b](https://medium.com/@abdelrahman0x01/php-type-juggling-vulnerability-768bca4d8b3b))

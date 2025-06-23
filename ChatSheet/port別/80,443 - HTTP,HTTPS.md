@@ -62,7 +62,10 @@ dirbuster -u https://10.10.10.60 -t 20 -l /usr/share/wordlists/dirbuster/directo
 ```
 -x conf,ini,txt,cfg,config,bak,old,backup
 ```
+- Python拡張子
+```sh
 
+```
 
 ---
 ## ## リクエストパラメータの列挙

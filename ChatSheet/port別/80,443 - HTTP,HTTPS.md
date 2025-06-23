@@ -64,7 +64,7 @@ dirbuster -u https://10.10.10.60 -t 20 -l /usr/share/wordlists/dirbuster/directo
 ```
 - Python拡張子
 ```sh
-
+.py,
 ```
 
 ---

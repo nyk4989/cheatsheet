@@ -92,7 +92,7 @@ print(musician) # 指定した性と名を元にフォーマットされたフ�
 def get_formatted_name(first_name,last_name,middle_name=''):
 	"""フォーマットされたフルネーム"""
 	# if文を使用して、middle_nameに値が入っているかを確認する。
-	if middle_name:
+	if non middle_name:
 		full_name=f"{first_name},{middle_name},{last_name}"
 	else:
 		full_name=f"{first_name},{last_name}"

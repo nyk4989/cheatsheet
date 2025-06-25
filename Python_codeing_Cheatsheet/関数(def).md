@@ -107,5 +107,11 @@ print(musician)
 ## ## 辞書を返す
 関数は、リストや辞書などの複雑なデータ構造を戻り値にできる。
 ```python
-
+def build_person(first_name,last_name):
+	"""人についての情報を辞書で返す"""
+	person={'first':first_name,'last':last_name} # ←辞書
+	return person
+	
+musician=build_person('jimi','hendrix')
+print(musician)
 ```

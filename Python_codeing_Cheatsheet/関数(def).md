@@ -88,5 +88,18 @@ print(musician) # 指定した性と名を元にフォーマットされたフ�
 ## ## オプション引数を作成する。
 これを使うかとにより、通常の関数では入力値を含めないと駄目だが、空の文字をデフォルト値として入力して起き、必要な時だけ使用することができる。
 ```python
-
+# デフォルト値を空にしておく。
+def get_formatted_name(first_name,last_name,middle_name=''):
+	"""フォーマットされたフルネーム"""
+	# if文を使用して、middle_nameに値が入っているかを確認する。
+	if middle_name:
+		full_name=f"{first_name},{middle_name},{last_name}"
+	else:
+		full_name=f"{first_name},{last_name}"
+	return full_name.title()
+	
+musician=get_formatted_name('jimi','hendrix')
+print(musician)
+musician=get_formatted_name('john','hooker','lee')
+print(musician)
 ```

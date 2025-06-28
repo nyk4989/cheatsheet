@@ -37,8 +37,26 @@ python -m pip install <パッケージ名>
 ### ### ドキュメント
 - [公式ドキュメント](https://docs.python.org/ja/3.13/tutorial/venv.html)
 ---
-## ## pyenvを組み合わせた仮想環境の作成
+## ## pyenv
+### ### pyenvを組み合わせた仮想環境の作成
 ```sh
 pyenv virtualenv 3.10.13 tfenv
 ```
 
+### ### 仮想環境の有効化
+```sh
+pyenv activate tfenv
+```
+
+### ### 仮想環境の無効化
+```sh
+pyenv deactivate tfenv
+```
+### ### インストールが終わったら以下を追記する必要がある。
+```SH
+# .zshrc のなるべく上部に置く
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```

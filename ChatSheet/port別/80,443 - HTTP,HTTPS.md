@@ -200,16 +200,20 @@ git checkout <commit-hash>
 ---
 # # 脆弱性別
 ## ## SQL Injection
-[SQL Injection](obsidian**://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FSQL%20Injection)
+- [SQL Injection](obsidian**://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FSQL%20Injection)
 
 ## ## File Inclusion
-[File Inclusion](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FFile%20Inclusion)
+- [File Inclusion](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FFile%20Inclusion)
 
 ## ## OS Command
-[OS Command](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FOS%20Command%20Injection)
+- [OS Command](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FOS%20Command%20Injection)
 
 ## ## SSTI
-[SSTI](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FSSTI(Server%20Side%20Templet%20Injection))
+- [SSTI](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FSSTI(Server%20Side%20Templet%20Injection))
+
+## ## XSS
+- [XSS](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FXSS)
+	- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
 
 ---
 # # 違和感

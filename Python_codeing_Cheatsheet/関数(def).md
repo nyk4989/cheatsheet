@@ -115,3 +115,13 @@ def build_person(first_name,last_name):
 musician=build_person('jimi','hendrix')
 print(musician)
 ```
+
+--- 
+## ## オプションを渡す
+- 説明：関数で必要な時だけ、追加の情報を指定できるようにする。
+- やり方：デフォルト値を使用する。
+
+```python
+def get_formatted_name(first_name,middle_name,last_name):
+
+```

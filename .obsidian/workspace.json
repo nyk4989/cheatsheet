@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ChatSheet/port別/80,443 - HTTP,HTTPS.md",
+                "file": "ChatSheet/port別/389,636,3268,3269 - LDAP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "80,443 - HTTP,HTTPS"
+              "title": "389,636,3268,3269 - LDAP"
             }
           }
         ],
@@ -200,6 +200,7 @@
   },
   "active": "d087013b83a2de1c",
   "lastOpenFiles": [
+    "ChatSheet/port別/80,443 - HTTP,HTTPS.md",
     "Python_codeing_Cheatsheet/関数とモジュールに格納する.md",
     "Python_codeing_Cheatsheet/無題のファイル.md",
     "Python_codeing_Cheatsheet/pyenv.md",
@@ -232,7 +233,6 @@
     "ChatSheet/Privilege_Escaration/Linux/Reverse Shell後の安定化.md",
     "ChatSheet/Privilege_Escaration/Linux/SUDO.md",
     "ChatSheet/Privilege_Escaration/Linux/Docker.md",
-    "ChatSheet/Privilege_Escaration/Linux/Capabilities.md",
     "C2",
     "PoC",
     "Python_codeing_Cheatsheet",

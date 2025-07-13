@@ -32,3 +32,4 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 - [ ] OR-based SQLi（`OR 1=1 --`）確認
 - [ ] UNION SELECT 検証
 ---
+# # XSS [CheatSheet](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FXSS)

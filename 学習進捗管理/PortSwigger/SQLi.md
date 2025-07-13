@@ -7,6 +7,8 @@ SELECT * FROM products WHERE category = 'Gifts' AND released = 1
 
 - Payload
 ```
-?category=Gifts
+?category=Gifts' or 1=1-- <-スペース必要
+↓エンコードするとこうなる。
 ?category=Gifts'%20or%201%3d1--%20
 ```
+

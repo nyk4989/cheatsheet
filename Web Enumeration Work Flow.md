@@ -60,7 +60,7 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 		- 上記のことからブラウザーで確認ができる。
 	- ちょっとソースコードベース
 
-## 折り返しの確認
+## ## 折り返しの確認
 ### ### 反射型&保存型
 - レスポンスに文字が折り返ってきてるか？
 	- Response Bodyに折り返しがあるか？
@@ -83,3 +83,9 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 		- [ ] 不明
 	- 以下の発火するか。
 		- [ ] `<script>alert(1)</script>`
+### ### DOMベースの確認方法
+- 実際にどう渡されてるかを確認する。
+	- [ ] ソースとシンクがどうなっているかを確認。
+	- [ ] Payloadを組み立てる。
+		`<img src=x onerror=alert(1)>`
+- 

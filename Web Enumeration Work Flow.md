@@ -90,3 +90,5 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 	- [ ] Payloadを組み立てる。例:`<img src=x onerror=alert(1)>`
 		- [ ] 発火した？
 		- [ ] してない？
+	- `a herf`タグがあった場合
+		- 

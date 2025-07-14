@@ -36,9 +36,10 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 ## ## 折り返しの確認
 
 ### ### 説明
+- 反射型
 入力した文字が次のページで折り返るやつ。
-
-
+- 保存型
+	![[Pasted image 20250714221329.png]]
 ### ### 反射型&保存型
 - レスポンスに文字が折り返ってきてるか？
 	- Response Bodyに折り返しがあるか？

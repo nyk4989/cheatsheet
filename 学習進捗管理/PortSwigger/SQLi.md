@@ -11,4 +11,3 @@ SELECT * FROM products WHERE category = 'Gifts' AND released = 1
 ↓エンコードするとこうなる。
 ?category=Gifts'%20or%201%3d1--%20
 ```
-

@@ -50,4 +50,10 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 		- [ ] されている。
 		- [ ] されてない。
 		- [ ] 不明
-	- [ ] 
+	- エスケープ処理
+		- [ ] されてる。
+		- [ ] されてない。
+		- [ ] 不明
+	- 以下の発火するか。
+		- [ ] `<script>alert(1)</script>`
+		- [ ] 

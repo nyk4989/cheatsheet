@@ -70,6 +70,12 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 	- リクエストヘッダがレスポンスで折り返ってきてるか？
 		- [ ] ある
 		- [ ] ない
+	- コンテキスト確認
+		- [ ] HTMLタグ内
+		- [ ] 属性内 (`href=""` や `src=""` の中)
+		- [ ] JS内リテラル(`<script> 内に入る)
+		- [ ] CSS内
+		- [ ] コメント内
 	- サニタイズがされているか？
 		- [ ] されている。
 		- [ ] されていない。
@@ -91,4 +97,6 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 		- [ ] 発火した？
 		- [ ] してない？
 	- `a herf`タグがあった場合
-		- 
+		- `javascript:alert(1);`が使えるか？
+			- [ ] 発火する。
+			- [ ] 発火しない。

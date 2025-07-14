@@ -33,3 +33,21 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 - [ ] UNION SELECT 検証
 ---
 # # XSS [CheatSheet](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FXSS)
+### ### 折り返しの確認
+- 反射型
+- レスポンスに文字が折り返ってきてるか？
+	- Response Bodyに折り返しがあるか？
+		- [ ] ある
+		- [ ] ない
+	- リクエストヘッダがレスポンスで折り返ってきてるか？
+		- [ ] ある
+		- [ ] ない
+	- サニタイズがされているか？
+		- [ ] されている。
+		- [ ] されていない。
+		- [ ] 不明
+	- バリデーションがされているか？
+		- [ ] されている。
+		- [ ] されてない。
+		- [ ] 不明
+	- [ ] 

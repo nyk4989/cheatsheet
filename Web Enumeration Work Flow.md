@@ -86,6 +86,6 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 ### ### DOMベースの確認方法
 - 実際にどう渡されてるかを確認する。
 	- [ ] ソースとシンクがどうなっているかを確認。
-	- [ ] Payloadを組み立てる。
-		`<img src=x onerror=alert(1)>`
-- 
+	- [ ] Payloadを組み立てる。例:`<img src=x onerror=alert(1)>`
+		- [ ] 発火した？
+		- [ ] してない？

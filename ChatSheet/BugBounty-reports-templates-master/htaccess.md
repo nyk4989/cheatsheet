@@ -25,17 +25,19 @@ http://xxx.xxxxxxxxxxxx.xxx/.htaccess
 Restrict access to files that begins by `.ht`
 
 - Apache
+```
 <FilesMatch "^\.ht">
     Require all denied
 </FilesMatch>
+```
+
 
 - Nginx
+```
 location ~/\.ht {
     deny all;
 }
-
-
-
+```
 
 Best regards,
 

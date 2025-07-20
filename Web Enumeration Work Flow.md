@@ -105,4 +105,4 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 	- location.hashを悪用(`http://hoge.com/#hoge`の#を読み取って操作をするJSのプロパティのこと。)
 		- 以下のPayloadで発火するかチェック。
 			- [ ] JSスキーム 例:`javascript:alert(1)`
-			- [ ] `<iframe src="https://kali.ip/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>`
+			- [ ] `<iframe src="https://target/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>`

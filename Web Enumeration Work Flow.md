@@ -62,7 +62,7 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 
 ## ## 折り返しの確認
 注意:Payloadを入れて折り返しがなかった場合はタグとして認識はされている可能性あり。
-### ### 反射型&保存型
+### ### JSのエントリポイント探し
 - レスポンスに文字が折り返ってきてるか？
 	- Response Bodyに折り返しがあるか？
 		- [ ] ある
@@ -77,6 +77,7 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 		- [ ] CSS内(`style="..." `の中)
 		- [ ] URLコンテキスト内(`<a href="...">`など)
 		- [ ] コメント内(`<!-- --> ` 内)
+		- [ ] URLの末尾に#があるもしくは#をつけて操作ができるか見る。
 	- サニタイズがされているか？
 		- [ ] されている。
 		- [ ] されていない。
@@ -102,4 +103,6 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 			- [ ] 発火する。
 			- [ ] 発火しない。
 	- location.hashを悪用(`http://hoge.com/#hoge`の#を読み取って操作をするJSのプロパティのこと。)
-		- この
+		- 以下のPayloadで発火するかチェック。
+			- [ ] JSスキーム 例:`javascript:alert(1)`
+			- [ ] `<iframe src="https://kali.ip/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>`

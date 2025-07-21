@@ -128,7 +128,7 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 	- [ ] 正常遷移
 	- [ ] それ以外
 ---
-# # IDOR(安全ではない/Access Control
+# # IDOR(安全ではない直接オブジェクト参照)/Access Control
 ## ## Check Lists
 - [管理画面の露呈]:
 	- Directory BruteForseで管理画面の露呈がないか。

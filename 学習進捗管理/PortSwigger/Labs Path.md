@@ -2,9 +2,9 @@
 ### ✅ 【最優先：実戦で頻出・報告しやすい】
 
 （必ず全部Labs潰せ）  
-1️⃣ **SQLi**  
-2️⃣ **XSS**  
-3️⃣ **SSRF**  
+1️⃣ **SQLi**   〇
+2️⃣ **XSS**   〇
+3️⃣ **SSRF**  ←着手中。
 4️⃣ **IDOR / Access Control**  
 5️⃣ **SSTI**  
 6️⃣ **OS Command Injection**  

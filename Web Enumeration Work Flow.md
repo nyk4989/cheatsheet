@@ -128,7 +128,7 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 	- [ ] 正常遷移
 	- [ ] それ以外
 ---
-# # IDOR/Access Control
+# # IDOR(安全ではない/Access Control
 ## ## Check Lists
 - [管理画面の露呈]:
 	- Directory BruteForseで管理画面の露呈がないか。
@@ -182,3 +182,8 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 		- リダイレクトの画面に機密情報はないか。
 			- [ ] ある
 			- [ ] ない
+- [悪用]:
+	- パスワードがマスクされている画面をhtml表示したときに平文でパスワードが閲覧可能か。
+		- [ ] 可能
+		- [ ] 不可能
+	- 

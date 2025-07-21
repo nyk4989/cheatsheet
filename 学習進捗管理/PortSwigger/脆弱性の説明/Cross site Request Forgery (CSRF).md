@@ -41,7 +41,15 @@
 
 ## 6️ 検出方法（診断手法）
 - 手動：
-  - [具体的にどのツールを使い、どう検証するか]
+	- リクエストから CSRF トークンを削除するか、空白スペースを入れます。
+	- POSTをGETに変更します。
+	- CSRF トークンをランダムな値 (たとえば 1) に置き換えます。
+	- CSRF トークンを同じ制約のランダム トークンに置き換えます。
+	- HTML インジェクションを使用してトークンを抽出します。
+	- 以前使用されたことのある CSRF トークンを使用します。
+	- 正規表現をバイパスします。
+	- リファラーヘッダーを削除します。
+	- 手動で呼び出しを実行して CSRF を要求し、そのトークンをリクエストに使用します。
 - 自動：
   - PoC作成をしてくれるツール
 	  - https://github.com/0xInfection/CSRFPocGenerator.git
@@ -63,7 +71,17 @@
 	  - クライアントに生の応答を送信しない。
 	  - HTTPリダイレクトを無効にする。
 	  - DNS理バインディングやTOCTOU競合状態などの攻撃を回避するためにURLの一貫性に注意する。
-- OWASPなどの対策
+- - [CSRFトークンの使用]
+	- 機密性の高い操作を行うときには必ず実装するほうが安全
+- [SameSite Cookieの使用]
+	- SameSiteは、ほかのウェブサイトからのリクエストにウェブサイトのCoolieを含めるタイミングを決定するブラウザセキュリティのメカニズム。
+	- SameSiteは3つのモードがある。
+		- Strict:同一サイトのリクエスト以外はCookieを送らない。
+		- Lax:通常は送らないがリンククリックやGetなどのナビゲーション時のみ送る。(POSTやAPIでは送らない。)
+		- None:クロスサイトでも送る。ただしSecure属性必須(HTTPSのみ)
+- [Refererベースの検証]
+	- リクエストがアプリケーション自身のドメインから発信されたものかどうかを確認する。
+- [OWASPなどの対策]
 	- https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
 	- https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
 

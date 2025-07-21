@@ -151,3 +151,16 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 	- cookieに権限の制御がされている箇所がないか。(`Cookie: Admin=false; session=5hh0u1RECHeGVLAcbVkZukRRltm9pqun`)←Adminのfalseをtrueに変えると攻撃は成功する。
 		- [ ] ある
 		- [ ] ない
+	- ユーザ更新した後レスポンスでRoleが返されるか。
+		以下みたいな感じで`ruleid`みたいなのがあるか。
+		```
+		{
+		  "username": "wiener",
+		  "email": "wiener@normal-user.net",
+		  "apikey": "jMZuAzR8TaeyfbXsMVeJsAGszmAq5ILK",
+		  "roleid": 2
+		}
+		```
+		- [ ] ある
+		- [ ] ない
+		- [ ] 

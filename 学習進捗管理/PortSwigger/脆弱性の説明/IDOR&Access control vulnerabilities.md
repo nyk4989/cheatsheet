@@ -33,6 +33,19 @@
 	- 一般の画面からはリンクがない/adminの発見
 	- robots.txtでも見つかる可能性があるが、Directory Bruteやるほうが早そう。
 	- 想定しにくいURLの場合もJSなどで気付かれる可能性がある。
+		```html
+		<script>
+			var isAdmin = false;
+			if (isAdmin) {
+				...
+				var adminPanelTag = document.createElement('a');
+				adminPanelTag.setAttribute('href', 'https://insecure-website.com/administrator-panel-yb556');
+				adminPanelTag.innerText = 'Admin panel';
+				...
+			}
+		</script>
+		```
+- 
 
 ## 6️ 検出方法（診断手法）
 - 手動：

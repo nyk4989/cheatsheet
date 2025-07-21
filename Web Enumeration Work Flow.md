@@ -145,6 +145,9 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 			- [ ] ある
 			- [ ] ない
 - [ログイン時にアクセス制御をしてないか]
-	- ログイン時にユーザの権限を制御しているリクエストがないか。
+	- ログイン時にユーザの権限を制御しているパラメータがないか。
+		- [ ] ある
+		- [ ] ない
+	- cookieに権限の制御がされている箇所がないか。(`Cookie: Admin=false; session=5hh0u1RECHeGVLAcbVkZukRRltm9pqun`)←Adminのfalseをtrueに変えると攻撃は成功する。
 		- [ ] ある
 		- [ ] ない

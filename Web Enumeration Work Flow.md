@@ -105,7 +105,7 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 
 ---
 # # CSRF [CSRFの説明](obsidian://open?vault=CheatSheet&file=%E5%AD%A6%E7%BF%92%E9%80%B2%E6%8D%97%E7%AE%A1%E7%90%86%2FPortSwigger%2F%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%AE%E8%AA%AC%E6%98%8E%2FCross%20site%20Request%20Forgery%20(CSRF))
-## Check lists
+## ## Check Lists
 - リクエストから CSRF トークンを削除するか、空白スペースを入れます。
 	- [ ] 正常遷移
 	- [ ] それ以外
@@ -127,3 +127,20 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 - リファラーヘッダーを削除します。
 	- [ ] 正常遷移
 	- [ ] それ以外
+---
+# # IDOR/Access Control
+## ## Check Lists
+- [管理画面の露呈]:
+	- Directory BruteForseで管理画面の露呈がないか。
+		- [ ] ある
+		- [ ] ない
+	- Robots.txtに管理画面に繋がるディレクトリがないか。
+		- [ ] ある
+		- [ ] ない
+	- HTML内に管理画面に繋がるURLがないか。
+		- href属性にないか。
+			- [ ] ある
+			- [ ] ない
+		- scriptタグの中にないか。
+			- [ ] ある
+			- [ ] ない

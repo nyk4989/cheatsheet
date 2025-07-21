@@ -104,4 +104,26 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 			- [ ] 発火しない。
 
 ---
-## 
+# # CSRF [CSRFの説明](obsidian://open?vault=CheatSheet&file=%E5%AD%A6%E7%BF%92%E9%80%B2%E6%8D%97%E7%AE%A1%E7%90%86%2FPortSwigger%2F%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%AE%E8%AA%AC%E6%98%8E%2FCross%20site%20Request%20Forgery%20(CSRF))
+## Check lists
+- リクエストから CSRF トークンを削除するか、空白スペースを入れます。
+	- [ ] 正常遷移
+	- [ ] それ以外
+- POSTをGETに変更します。
+	- [ ] 正常遷移
+	- [ ] それ以外
+- CSRF トークンをランダムな値 (たとえば 1) に置き換えます。
+	- [ ] 正常遷移
+	- [ ] それ以外
+- CSRF トークンを同じ制約のランダム トークンに置き換えます。
+	- [ ] 正常遷移
+	- [ ] それ以外
+- HTML インジェクションを使用してトークンを抽出します。
+	- [ ] できる
+	- [ ] できない
+- 以前使用されたことのある CSRF トークンを使用します。
+	- [ ] 正常遷移
+	- [ ] それ以外
+- リファラーヘッダーを削除します。
+	- [ ] 正常遷移
+	- [ ] それ以外

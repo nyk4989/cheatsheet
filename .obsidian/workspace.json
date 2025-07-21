@@ -200,6 +200,8 @@
   },
   "active": "d087013b83a2de1c",
   "lastOpenFiles": [
+    "ChatSheet/脆弱性別/Cross Site Request Forgery(CSRF).md",
+    "ChatSheet/脆弱性別/無題のファイル.md",
     "学習進捗管理/PortSwigger/脆弱性の説明/XSS.md",
     "学習進捗管理/PortSwigger/脆弱性の説明/SQLi.md",
     "学習進捗管理/PortSwigger/脆弱性の説明/Cross site Request Forgery (CSRF).md",
@@ -228,8 +230,6 @@
     "ChatSheet/BugBounty-reports-templates-master/ike-key.md",
     "ChatSheet/BugBounty-reports-templates-master/idor.md",
     "ChatSheet/BugBounty-reports-templates-master/htaccess.md",
-    "ChatSheet/BugBounty-reports-templates-master/full-path-disclosure.md",
-    "ChatSheet/BugBounty-reports-templates-master/drupalgeddon2.md",
     "ChatSheet/BugBounty-reports-templates-master",
     "ChatSheet/img/Pasted image 20250714225637.png",
     "ChatSheet/img/Pasted image 20250714221329.png",

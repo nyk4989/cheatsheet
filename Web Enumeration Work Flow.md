@@ -190,4 +190,8 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 	- パスワードがマスクされている画面をhtml表示したときに平文でパスワードが閲覧可能か。
 		- [ ] 可能
 		- [ ] 不可能
-	- 
+
+---
+# # SSRF(サーバサイドリクエストフォージュリー)
+
+## ## CheckLists

@@ -195,3 +195,6 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 # # SSRF(サーバサイドリクエストフォージュリー)
 
 ## ## CheckLists
+- リクエストで他サーバにアクセスしている箇所がないか。
+	- [ ] ある:SSRFの疑いあり。
+	- [ ] ない

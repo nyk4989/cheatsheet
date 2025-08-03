@@ -198,3 +198,9 @@ https://0afc009d047790c78112d44600d300c9.web-security-academy.net/filter?categor
 - リクエストで他サーバにアクセスしている箇所がないか。
 	- [ ] ある:SSRFの疑いあり。
 	- [ ] ない
+
+---
+# # JWT Attack
+- JWTが使われている
+	- [ ] 使われている : 診断対象
+	- [ ] ない : 診断対象外

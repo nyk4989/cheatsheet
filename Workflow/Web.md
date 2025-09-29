@@ -25,8 +25,23 @@
 	2. HTML`<meta>`タグ。
 	3. DOMを通じたウィンドウ`location`を確認する。
 - **オープンリダイレクト**
-	- ベーシック列挙
+	- **ベーシック列挙**
 		- [ ] `?redirect=http://C2.com`
 		- [ ] `?redirect=//evil.com`
 	- **スキームバリエーション**
-		- [ ] ``
+		- [ ] `?redirect=http%3A%2F%2Fevil.com`
+		- [ ] `?redirect=%5Cevil.com`
+	- **相対パス**
+		- [ ] `?redirect=../../evil.com`
+		- [ ] `?redirect=/%2E%2E/evil.com`
+		- [ ] `?redirect=/\evil.com`
+	- **ホワイトリスト回避**
+		- [ ] `?redirect=https://trusted.com.evil.com`
+		- [ ] `?redirect=https://evil.com@trusted.com`
+		- [ ] `?redirect=https://trusted.com#@evil.com`
+	- **スキームミックス**
+		- [ ] `?redirect=//trusted.com.evil.com`
+		- [ ] `?redirect=https:/evil.com`
+	- **二重エンコード / Unicode**
+		- [ ] `?redirect=%252F%252Fevil.com`
+		- [ ] `?redirect=%u2216evil.com`

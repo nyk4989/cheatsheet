@@ -58,8 +58,13 @@
 
 ---
 ## クリックジャッキング
+
 - **概要**
 	- 攻撃者が偽サイトを作りその上に、iframeで正規のページのボタンを自分のサイトに埋め込み透明にする。さらに自作したボタンをその下に置く。こうすることで、正規の方法でリクエストが送られるかつ、CSRFをこちら側が入手することなく、意図しない操作が可能となる。
 - **チェックポイント**
 	- [ ] レスポンスヘッダにX-Frame-Optionsヘッダが存在すること
 	- [ ] レスポンスヘッダまたはレスポンスボディにContent-Security-Policyヘッダ相当の要素が存在すること
+- **手順等**
+	- [obsidian](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FWeb%2FClickJacking)
+	- [PostSwigger](https://portswigger.net/web-security/clickjacking#what-is-clickjacking)
+	- 

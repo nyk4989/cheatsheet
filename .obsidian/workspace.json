@@ -186,6 +186,8 @@
   },
   "active": "f2b7576b8a8c4110",
   "lastOpenFiles": [
+    "ChatSheet/脆弱性別/Web/ClickJacking.md",
+    "ChatSheet/脆弱性別/Web/無題のファイル.md",
     "Workflow/Web.md",
     "スケジュール/Web.md",
     "スケジュール/武山のスケジュール.md",
@@ -216,8 +218,6 @@
     "BugBounty-reports-templates-master/server-status.md",
     "BugBounty-reports-templates-master/s3-bucket.md",
     "BugBounty-reports-templates-master/Rewriting Links on Page using Host Header -[No Cache Poisioning]",
-    "BugBounty-reports-templates-master/repository.md",
-    "BugBounty-reports-templates-master/reflected-file-download.md",
     "BugBounty-reports-templates-master/Post Based XSS",
     "BugBounty-reports-templates-master/No Rate Limit on Login",
     "BugBounty-reports-templates-master",

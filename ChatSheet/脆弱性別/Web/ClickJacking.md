@@ -63,3 +63,10 @@
 ## 事前入力されたフォーム入力によるクリックジャッキング
 Getで送信される入力フォーム送信前にテキスト入力を要求するウェブサイトもある。
 URLに値を攻撃者が準備をして、任意の値を被害者に送信させる。
+
+- 以下の部分を使うだけ。
+	- POSTリクエストだったとしても、GETで通信ができるのであれば悪用は可能そうかな。
+```html
+<iframe src="https://0a3d000603929cf9804d172b006d0074.web-security-academy.net/my-account?email=hacker@attacker-website.com">
+```
+---

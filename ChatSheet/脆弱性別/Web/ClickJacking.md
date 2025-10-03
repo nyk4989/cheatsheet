@@ -34,5 +34,27 @@
 <iframe src="YOUR-LAB-ID.web-security-academy.net/my-account"> /** ターゲットのサイト **/
 </iframe>
 ```
+- ↓実際の記入例
+```html
+<style>
+    iframe {
+        position:relative;
+        width:700px;
+        height: 500px;
+        opacity: 0.1;
+        z-index: 2;
+    }
+    div {
+        position:absolute;
+        top:300px;
+        left:60px;
+        z-index: 1;
+    }
+</style>
+<div>Test me</div>
+<iframe src="https://0ada00ed03368e89800b0395003e008a.web-security-academy.net/my-account"></iframe>
+```
 
-3. 調整時の実際のがめんは
+3. 調整時の実際の画面は以下の様になる。
+![[Pasted image 20251003174022.png]]
+![[Pasted image 20251003174125.png]]

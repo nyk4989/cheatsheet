@@ -186,6 +186,7 @@
   },
   "active": "f2b7576b8a8c4110",
   "lastOpenFiles": [
+    "ChatSheet/img/Pasted image 20251004184839.png",
     "ChatSheet/脆弱性別/Web/クロスオリジンリソース共有(CORS).md",
     "ChatSheet/脆弱性別/Web/無題のファイル.md",
     "ChatSheet/img/Pasted image 20251003174125.png",
@@ -219,7 +220,6 @@
     "BugBounty-reports-templates-master/session_unvalidated_logout.md",
     "BugBounty-reports-templates-master/session-endless.md",
     "BugBounty-reports-templates-master/Session not expiring on Logout",
-    "BugBounty-reports-templates-master/server-status.md",
     "BugBounty-reports-templates-master/Rewriting Links on Page using Host Header -[No Cache Poisioning]",
     "BugBounty-reports-templates-master/Post Based XSS",
     "BugBounty-reports-templates-master/No Rate Limit on Login",

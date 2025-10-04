@@ -68,3 +68,9 @@
 	- [obsidian](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FWeb%2FClickJacking)
 	- [PostSwigger](https://portswigger.net/web-security/clickjacking#what-is-clickjacking)
 ---
+## クロスオリジンリソース共有(CORS)の設定不備
+- **概要**
+	- サーバ側でCORSに関するヘッダーの設定を謝ると**クロスオリジン攻撃**を受ける可能性がある。
+	- この攻撃は、過度に制限を緩くしてしまったりすることで生じる脆弱性。
+- **チェックポイント**
+	- 

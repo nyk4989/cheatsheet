@@ -39,7 +39,26 @@
 ```
 
 ## 2. Originヘッダーの解析エラー
-- 別ドメインのアクセスを許可する設定として、
+- 別ドメインのアクセスを許可する設定として、ホワイトリストを使用することで制限を掛けることができる。
+- 指定されたオリジンがホワイトリストにある場合、`Access-Control-Allow-Origin`ヘッダーに反映され、アクセスが許可される。
+↓リクエスト
+```
+	GET /data HTTP/1.1
+	Host: normal-website.com
+	...
+	Origin: https://innocent-website.com
+```
+↓レスポンス
+```
+HTTP/1.1 200 OK
+...
+Access-Control-Allow-Origin: https://innocent-website.com
+```
+- CORSオリジンホワイトリストの実装では、ミスが起こる場合がある。
+	- 例：
+		- すべてのサブドメインを許可している。(将来的に取得するであろうドメインも含めて)
+		- 
+
 
 ---
 ## 攻撃の説明

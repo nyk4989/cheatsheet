@@ -41,6 +41,10 @@
 ---
 ## 攻撃の説明
 ### 基本的なオリジンリフレクションによるCORSの脆弱性
+
 1. リクエストヘッダーに`Origin: http://hoge.com/`を追加して、`Access-Control-Allow-Origin:`と`Access-Control-Allow-Credentials: true`がレスポンスにあるかを確認。
 	![[Pasted image 20251004184839.png]]
-2. `python -m http.server`を起動しリッスン、
+2. XSSなどと組み合わせて、被害者が自分が仕込んだOriginヘッダーを含んだリクエストを送信するように仕向ける。
+	- 例：
+3. `python -m http.server`を起動しリッスン、APIキーを受け取る。
+---

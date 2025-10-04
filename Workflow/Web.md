@@ -73,6 +73,14 @@
 	- サーバ側でCORSに関するヘッダーの設定を謝ると**クロスオリジン攻撃**を受ける可能性がある。
 	- この攻撃は、過度に制限を緩くしてしまったりすることで生じる脆弱性。
 - **チェックポイント**
-	- `Origin: https://hoge/`を入力するして、`Access-Control-Allow-Origin`と`Access-Control-Allow-Credentials: true`がレスポンスに含まれるか。
-		- [ ] 含まれる。
-		- [ ] 含まれない。
+	- `Access-Control-Allow-Origin`と`Access-Control-Allow-Credentials: true`が返ってくる。
+		- ヘッダーに`Origin: https://hoge.com/`を追加
+			- [ ] 含まれる。
+			- [ ] 含まれない。
+		- `hoge.com`を`fuga-hoge.com`にしてOriginヘッダーへ
+			- [ ] 含まれる。
+			- [ ] 含まれない。
+		- `hoge.com`を`hoge.com.fuga.com`にしてOriginヘッダーへ
+			- [ ] 含まれる。
+			- [ ] 含まれない。
+		- 

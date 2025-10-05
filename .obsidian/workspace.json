@@ -186,6 +186,8 @@
   },
   "active": "f2b7576b8a8c4110",
   "lastOpenFiles": [
+    "ChatSheet/脆弱性別/Web/Authentication vulnerabilities(認証の脆弱性).md",
+    "ChatSheet/脆弱性別/Web/Authentication vulnerabilities(認証の脆弱性.md",
     "ChatSheet/img/Pasted image 20251004184839.png",
     "ChatSheet/脆弱性別/Web/クロスオリジンリソース共有(CORS).md",
     "ChatSheet/脆弱性別/Web/無題のファイル.md",
@@ -218,7 +220,6 @@
     "BugBounty-reports-templates-master/source-code-disclosure.md",
     "BugBounty-reports-templates-master/smtp-user-enum.md",
     "BugBounty-reports-templates-master/session_unvalidated_logout.md",
-    "BugBounty-reports-templates-master/session-endless.md",
     "BugBounty-reports-templates-master/Session not expiring on Logout",
     "BugBounty-reports-templates-master/Rewriting Links on Page using Host Header -[No Cache Poisioning]",
     "BugBounty-reports-templates-master/Post Based XSS",
@@ -230,7 +231,6 @@
     "ChatSheet/img/Pasted image 20250714001725.png",
     "ChatSheet/img/Pasted image 20250612224600.png",
     "ChatSheet/Privilege_Escaration/Active Directory/CRTP/5.権限昇格と並行移動imge/Pasted image 20250118191106.png",
-    "ChatSheet/Privilege_Escaration/Active Directory/CRTP/5.権限昇格と並行移動imge/Pasted image 20241230182252.png",
-    "ChatSheet/img/Pasted image 20250524180648.png"
+    "ChatSheet/Privilege_Escaration/Active Directory/CRTP/5.権限昇格と並行移動imge/Pasted image 20241230182252.png"
   ]
 }

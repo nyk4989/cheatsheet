@@ -76,11 +76,18 @@
 	- `Access-Control-Allow-Origin`と`Access-Control-Allow-Credentials: true`が返ってくる。
 		- ヘッダーに`Origin: https://hoge.com/`を追加
 			- [ ] 含まれる。
-			- [ ] 含まれない。
+			- [ ] 含まれない。(脅威無し)
 		- `hoge.com`を`fuga-hoge.com`にしてOriginヘッダーへ
 			- [ ] 含まれる。
-			- [ ] 含まれない。
+			- [ ] 含まれない。(脅威無し)
 		- `hoge.com`を`hoge.com.fuga.com`にしてOriginヘッダーへ
 			- [ ] 含まれる。
-			- [ ] 含まれない。
-		- 
+			- [ ] 含まれない。(脅威無し)
+		- Originヘッダーに`null`を追加してどうなるか。
+			- [ ] 含まれる。
+			- [ ] 含まれない。(脅威無し)
+- **手順等**
+	- [obsidian](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FWeb%2F%E3%82%AF%E3%83%AD%E3%82%B9%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%B3%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E5%85%B1%E6%9C%89(CORS))
+---
+## Authentication vulnerabilities(認証の脆弱性)
+- **概要**

@@ -72,6 +72,7 @@ Access-Control-Allow-Origin: https://innocent-website.com
 		normal-website.com.evil-user.net
 		```
 
+---
 ## 3. ホワイトリストに登録されたnullオリジン値
 - Originヘッダーの使用では、null値がサポートされている。
 - 以下の特殊な状況において、Originヘッダーでnull値を送信する場合がある。

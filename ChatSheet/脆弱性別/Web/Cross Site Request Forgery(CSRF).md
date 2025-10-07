@@ -1,4 +1,21 @@
+## 前提知識
 
+---
+## 脆弱性の説明
+CSRFは、攻撃者がユーザに意図しない操作を実行させることを可能にする脆弱性。
+
+- **CSRFの条件**
+	- 関連するアクション
+		- 攻撃者は、アプリケーション内で何らかのアクションを誘発する必要がある。代表的なのは、パスワード変更。
+	- Cookieベースのセッション処理
+		- CSRF Tokenだったり、類似の目的で使わるものがないこと。
+	- 予測不可能なリクエストパラメータ
+		- アクションを実行するリクエストに予測不可能なパラメータが含まれないこと。
+
+---
+## 悪用方法の説明
+
+---
 # # Tools
 - https://github.com/0xInfection/XSRFProbe
 - https://github.com/0xInfection/CSRFPocGenerator.git
@@ -41,6 +58,6 @@ xhr.setRequestHeader("Content-Type", "text/plain");
 xhr.send('{"role":admin}');
 </script>
 ```
-
-# # 参考文献
+---
+## 参考文献
 - https://github.com/six2dez/pentest-book/blob/master/enumeration/web/csrf.md

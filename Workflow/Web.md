@@ -1,4 +1,4 @@
-## Basic Enumeration
+,## Basic Enumeration
 - **Directory Brute force (WordList)**
 	- [ ] SecLists-master/Discovery/Web-Content/common.txt
 	- [ ] /opt/wordlists/SecLists-master/Discovery/Web-Content/raft-large-directories-lowercase.txt
@@ -156,3 +156,8 @@
 	- [obsidian](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FWeb%2FXSS)
 ---
 ## CSRF
+- **概要**
+	セッションベースであり、関連するアクションが実行でき、予測不可能なパラメータがない場合に悪用が可能。
+	また、この攻撃は、フィッシングなどでユーザを自分の管理しているサイトに誘導する必要がある。
+- チェックポイント
+	- CSRFトークンが存在しない

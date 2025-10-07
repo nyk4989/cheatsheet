@@ -120,4 +120,16 @@
 - **悪用手順**
 	- [obsidian](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FWeb%2FAuthentication%20vulnerabilities(%E8%AA%8D%E8%A8%BC%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7))
 ---
-## 
+## SQL Injection
+- **概要**
+	バックエンドで実行されるSQL文に渡される個所に、ペイロードを文字連結がされるとSQL Injectionが発生する。
+
+- **チェックポイント**
+	- シングルクォートやダブルクォートを入力し、レスポンスに変化があるか。
+		- [ ] 変わる。(脆弱性がある可能性がある。)
+		- [ ] 変わらない。
+	- 数値型の場合演算を行ってレスポンスが変わるか。
+		- [ ] 変わる
+
+- **悪用手順等**
+	- [obsidian](obsidian://open?vault=CheatSheet&file=ChatSheet%2F%E8%84%86%E5%BC%B1%E6%80%A7%E5%88%A5%2FWeb%2FSQL%20Injection)
